@@ -34,9 +34,19 @@
 # for i in range(num) :
 #     print("%s"%(a),end='')
 
-n = int(input())
+# n = int(input())
 
-print("x %d"%(n))
+# print("x %d"%(n))
 
-for i in range(1, 10) :
-    print("%d x %d = %d"%(n,i,n * i))
+# for i in range(1, 10) :
+#     print("%d x %d = %d"%(n,i,n * i))
+
+
+second = int(input())
+
+d = (int)(second / (24 * 3600))
+h = (int)(second / 3600 - (24 * d))
+m = (int)((second / 60) % 60)
+s = second % 60
+
+print("%d days %02d:%02d:%02d"%(d,h,m,s))
