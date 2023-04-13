@@ -1,21 +1,16 @@
-time = int(input())
-minute = int(input())
-
-M = int(input())
-N = int(input())
-
-h = M // 60
-m = M % 60
-for i in range(N) :
-    if (time >= 22) :
-        print("Emergency!")
-        break
-    print("%02d:%02d Carrot Time!"%(time,minute))
-    time += h
-    minute += m
-    if (minute >= 60) :
-        minute %= 60
-        time += 1
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+n4 = int(input())
+n5 = int(input())
 
 
-
+for i in range(n2, n3 + 1) :
+    for j in range(n4, n5 + 1) :
+        if (i % 2 == 0 and j > 30) :
+            break
+        print("%02d%02d%02d"%(n1,i,j),end='')
+        if (i == j) :
+            print(" Lucky Day!")
+        else :
+            print()
