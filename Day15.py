@@ -17,13 +17,13 @@ while (True) :
     if (str[0] == 'n') :
         break
     if (str[0] =='d' and len(str) == 4) :
-        drink[(int)(str[1])][(int)(str[2])] = int(str[3])
+        drink[(int)(str[1])][(int)(str[2])] += int(str[3])
     elif (str[0] =='s' and len(str) == 4) :
-        snack[(int)(str[1])][(int)(str[2])] = int(str[3])
+        snack[(int)(str[1])][(int)(str[2])] += int(str[3])
     elif (str[0] =='d' and len(str) == 5) :
-        drink[(int)(str[1])][(int)(str[2])] = int(str[3]) * 10 + int(str[4])
+        drink[(int)(str[1])][(int)(str[2])] += int(str[3]) * 10 + int(str[4])
     elif (str[0] =='s' and len(str) == 5) :
-        snack[(int)(str[1])][(int)(str[2])] = int(str[3]) * 10 + int(str[4])
+        snack[(int)(str[1])][(int)(str[2])] += int(str[3]) * 10 + int(str[4])
 
 print(drink)
 print(snack)
